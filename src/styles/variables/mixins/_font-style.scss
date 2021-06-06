@@ -1,0 +1,33 @@
+/// Title Font : Catamaran
+
+
+$font-title : 'Catamaran', sans-serif;
+
+@mixin H4
+{
+    font-family: $font-title;
+    font-size: 25px;
+    line-height: 150%;
+    font-weight: 500;
+}
+
+
+/// Texts Font : PT Sans
+
+
+$font-texts : 'PT Sans', sans-serif;
+
+@mixin body-1
+{
+    font-family: $font-texts;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+}
+@mixin overline
+{
+    font-family: $font-texts;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 700;
+}

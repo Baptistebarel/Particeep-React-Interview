@@ -1,0 +1,11 @@
+@import '../../styles/variables/colors/colors';
+@import '../../styles/variables/mixins/font-style';
+@import '../../styles/variables/spacings/spacing';
+
+.movieListWrapper{
+  max-width: 1200px;
+  margin: auto;
+  padding: $spacing-3 $spacing-4;
+  display: flex;
+  flex-wrap: wrap;
+}

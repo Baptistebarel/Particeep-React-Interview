@@ -1,0 +1,11 @@
+@import '../../styles/variables/colors/colors';
+@import '../../styles/variables/mixins/font-style';
+@import '../../styles/variables/spacings/spacing';
+
+.button{
+  padding: $spacing-1 $spacing-2;
+  border-radius: 8px;
+  border: 0px;
+  cursor: pointer;
+  @include body-1;
+}

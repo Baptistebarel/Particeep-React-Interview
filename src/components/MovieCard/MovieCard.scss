@@ -1,0 +1,81 @@
+@import '../../styles/variables/colors/colors';
+@import '../../styles/variables/mixins/font-style';
+@import '../../styles/variables/spacings/spacing';
+@import 'include-media';
+
+
+.movieCard{
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2% 1%;
+  padding: 2%;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background-color: $white;
+  box-shadow:
+    0 1.5px 10px -25px rgba(0, 0, 0, 0.035),
+    0 12px 80px -25px rgba(0, 0, 0, 0.07)
+  ;
+  @include media(">=tablet", "<desktop") {
+    width: 31%;
+  }
+  @include media(">=phone", "<tablet") {
+    width: 48%;
+  }
+  @include media("<450px") {
+    width: 98%;
+  }
+
+  .movieCard--header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    .movieCard--header-category{
+      @include overline;
+    }
+
+    .movieCard--header-cross{
+      cursor: pointer;
+    }
+  }
+
+  .movieCard--title{
+    @include H4;
+    margin: $spacing-3 0%;
+    box-sizing: border-box;
+  }
+
+  .movieCard--likeSection{
+    width: 100%;
+
+    .movieCard--likeWrapper{
+      display: flex;
+      align-items: center;
+      margin: $spacing-2 0%;
+
+      .movieCard--likeWrapper-icon{
+        cursor: pointer;
+      }
+  
+      .movieCard--likeWrapper-text{
+        margin-left: 4%;
+        @include body-1;
+      }
+    }
+  }
+
+  .movieCard--likeRatio{
+    width: 100%;
+    height: 10px;
+    background-color: $red;
+
+    .movieCard--likeLine{
+      height: 10px;
+      background-color: $green;
+    }
+  }
+}

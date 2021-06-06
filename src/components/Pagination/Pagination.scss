@@ -1,0 +1,24 @@
+@import '../../styles/variables/colors/colors';
+@import '../../styles/variables/mixins/font-style';
+@import '../../styles/variables/spacings/spacing';
+
+.pagination{
+  max-width: 300px;
+  height: 70px;
+  margin: 30px auto 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  .pagination--buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .pagination--text{
+    @include body-1;
+    color: $black;
+  }
+}
