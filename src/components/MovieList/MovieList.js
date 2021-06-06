@@ -47,7 +47,7 @@ const MovieList = ({
 
   useEffect(() => {
     setPagesNumber(Math.ceil(moviesList.length / moviesPerPage))
-  }, [moviesFiltered, moviesPerPage, setPagesNumber])
+  }, [moviesList, moviesPerPage, setPagesNumber])
 
   useEffect(() => {
     setMoviesFiltered(moviesList.slice(
